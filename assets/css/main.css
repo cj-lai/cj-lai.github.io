@@ -1705,12 +1705,23 @@
 		margin: 0 0 0.5em 0;
 	}
 
+	h1o, h2o, h3o, h4o, h5o, h6o {
+		color: #ff7328;
+		font-weight: bold;
+		line-height: 1.5;
+		margin: 0 0 0.5em 0;
+	}
+
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
 		}
 
 	h1 {
+		font-size: 2.75em;
+	}
+	
+	h1o {
 		font-size: 2.75em;
 	}
 
@@ -1739,6 +1750,10 @@
 			}
 
 	h2 {
+		font-size: 1.75em;
+	}
+
+	h2o {
 		font-size: 1.75em;
 	}
 
@@ -2601,14 +2616,24 @@
 
 	.hexagon_wrapper {
 		position:relative;
-
 		width: 320px;
-		height: 366.41px;
+		height: 500px;
 
 	}
 
 	.hexagon_wrapper.right {
 		float: right;
+		margin: 0 0 1em 3.5em;
+	}
+	@media screen and (max-width: 1280px) {
+		.hexagon_wrapper.right {
+			float: center;
+			margin: 0 0 0 0;
+		}
+	}
+
+	.hexagon_wrapper.left {
+		float: left;
 		margin: 0 0 1em 3.5em;
 	}
 	@media screen and (max-width: 1280px) {
@@ -3184,6 +3209,7 @@
 		}
 
 			.spotlights > section > .content > .inner {
+				color: #FFFFFF;
 				-moz-transform: translateX(0) translateY(0);
 				-webkit-transform: translateX(0) translateY(0);
 				-ms-transform: translateX(0) translateY(0);
@@ -3195,12 +3221,12 @@
 				opacity: 1;
 			}
 
-		.spotlights > section:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.05);
+		.spotlights > section:nth-child(2n) {
+			background-color: #c0c0c0;
 		}
 
-		.spotlights > section:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.1);
+		.spotlights > section:nth-child(2n-1) {
+			background-color: #c0c0c0;
 		}
 
 		.spotlights > section.inactive > .image:before, body.is-loading .spotlights > section > .image:before {
@@ -3218,7 +3244,7 @@
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .content {
-				padding: 4em 4em 2em 4em ;
+				padding: 1.5em 1em 2em 4em ;
 			}
 
 		}
@@ -3230,8 +3256,9 @@
 			}
 
 				.spotlights > section > .image {
-					width: 100%;
-					height: 50vh;
+					text-align: center;
+					width: 150px;
+					height: 150px;
 				}
 
 				.spotlights > section > .content {
@@ -3250,12 +3277,13 @@
 		@media screen and (max-width: 736px) {
 
 			.spotlights > section > .image {
-				height: 50vh;
-				min-height: 15em;
+					text-align: center;
+					width: 100px;
+					height: 100px;
 			}
 
 			.spotlights > section > .content {
-				padding: 3em 2em 1em 2em ;
+				padding: 1em 1em 1em 1em ;
 			}
 
 		}
@@ -3369,7 +3397,7 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #2e9692;
+			background-color: #8c8c8c;
 		}
 
 		.wrapper.style1-alt {
@@ -3377,7 +3405,7 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #3aa4ca;
+			background-color: #446d8c;
 		}
 
 		.wrapper.style2-alt {
@@ -4036,6 +4064,86 @@
 
 		}
 
+/* Exp */
+
+	#experience {
+		background-attachment: fixed;
+		background-image: url("images/intro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+		@media screen and (max-width: 1280px) {
+			#experience {
+				background-attachment: scroll;
+			}
+		}
+
+/* Act */		
+	#activities {
+		background-attachment: fixed;
+		background-image: url("images/intro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+		@media screen and (max-width: 1280px) {
+			#activities {
+				background-attachment: scroll;
+			}
+		}
+/* Publ */		
+	#publications {
+		background-attachment: fixed;
+		background-image: url("images/intro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+		@media screen and (max-width: 1280px) {
+			#publications {
+				background-attachment: scroll;
+			}
+		}
+/* teaching */		
+	#teaching {
+		background-attachment: fixed;
+		background-image: url("images/intro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+		@media screen and (max-width: 1280px) {
+			#teaching {
+				background-attachment: scroll;
+			}
+		}		
+/* Res */		
+	#resources {
+		background-attachment: fixed;
+		background-image: url("images/intro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+		@media screen and (max-width: 1280px) {
+			#resources {
+				background-attachment: scroll;
+			}
+		}
+/* Act */		
+	#activities {
+		background-attachment: fixed;
+		background-image: url("images/intro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+		@media screen and (max-width: 1280px) {
+			#activities {
+				background-attachment: scroll;
+			}
+		}
 
 .eqWrap {
 	display: flex;
@@ -4091,9 +4199,9 @@
 
 .styQuote {
 	text-align:justify;
-	font-size: 28px;
+	font-size: 24px;
 	color:orange;
-	font-family:"Courier New", Courier, monospace;
+	font-family:Microsoft JhengHei;
     font-weight:bold;
 }
 
@@ -4101,5 +4209,12 @@
 	text-align:justify;
 	font-size: 16px;
 	color:#FFFFFF;
+	font-family:Microsoft JhengHei;
+}
+
+.styCont2 {
+	text-align:justify;
+	font-size: 16px;
+	color:#FF7328;
 	font-family:Microsoft JhengHei;
 }
